@@ -1,3 +1,8 @@
+function print(callback){
+  
+}
+]
+
 function fn(number) {
     return number * 2;
   }
