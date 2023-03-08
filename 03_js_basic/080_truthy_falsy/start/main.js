@@ -11,7 +11,8 @@ undefined
 NaN (Not a Number)
 */
 
-const a = 0;
+
+const a = "";
 let result = a ? 10 : -10;
 console.log(result);
 
@@ -25,9 +26,9 @@ const resultA = "" && "foo";
 const resultB = 2 && 1 && 0 && 3;
 const resultC = "foo" && 4;
 
-// console.log(resultA);
-// console.log(resultB);
-// console.log(resultC);
+console.log(resultA);
+console.log(resultB);
+console.log(resultC);
 
 // 理論和 (||) について
 const resultD = "" || "foo";
