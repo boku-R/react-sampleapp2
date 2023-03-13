@@ -1,6 +1,10 @@
 import { useState } from "react";
+import{useToast} from "@chakra-ui/react"
+
 const Form = ({ createTodo }) => {
   const [enteredTodo, setEnteredTodo] = useState("");
+
+  const toast=useToast()
 
   const addTodo = (e) => {
     e.preventDefault();
