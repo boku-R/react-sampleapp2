@@ -25,7 +25,7 @@ const Example = () => {
         {/* mapで各要素に特定の処理を行ったものを新しい配列とする */}
         {persons.map((person) => (
             /* リストにはkeyを設定することを忘れないように！ */
-            <li key={person.name}>
+          <li key={person.name}>
             <Profile {...person} />
           </li>
         ))}
