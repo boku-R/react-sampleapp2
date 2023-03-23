@@ -1,4 +1,5 @@
 import { createStore, combineReducers } from "redux";
+import { reducer } from "./modules/counter"
 
 const initialState = 0;
 const reducer = (state = initialState, { type, step }) => {
