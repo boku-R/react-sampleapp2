@@ -1,15 +1,19 @@
+import EffectDemo from "./component/EffectDemo";
+import LifecycleDemo from "./component/LifecycleDemo";
+
 const Example = () => {
   return (
     <>
-      <h3>Lifecycleの実行タイミング</h3>
-      <p>
-        コンソールを開いて、下記三つのステップを実施しながら出力内容を観察してください。
-      </p>
-      <ol>
-        <li>[Mount] ブラウザを再読み込み</li>
-        <li>[Update] +1ボタンを押下</li>
-        <li>[Unmount] 別のレクチャーを選択</li>
-      </ol>
+      <div>
+        <h3>Class lifecycle</h3>
+        <div id="demo1">
+          <LifecycleDemo />
+        </div>
+        <h3>useEffect</h3>
+        <div id="demo2">
+          <EffectDemo />
+        </div>
+      </div>
     </>
   );
 };
